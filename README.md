@@ -4,6 +4,9 @@ This script works with TerrariumPi and Raspberry Camera and make a image with te
 You can use different camera but then you need change raspistill command to fswebcam.
 You can also use different publish method than ftp.
 
+Working script:
+http://kaju.ovh/cam1/terrarium.jpg
+
 ## Instalation:
 
 1. Download 3 files to your /home/pi catalog.
