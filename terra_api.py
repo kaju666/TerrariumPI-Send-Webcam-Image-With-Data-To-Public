@@ -34,6 +34,5 @@ print("{}: {}°C".format(t0n, t0))
 print("{}: {}°C".format(t1n, t1))
 print("{}: {}°C".format(t2n, t2))
 print("{}: {}%".format(h0n, h0))
-print("{}: {}°C".format(t2n, t2))
 print("Uptime: %dD %dH %dM" % (day, hour, minutes))
 	
