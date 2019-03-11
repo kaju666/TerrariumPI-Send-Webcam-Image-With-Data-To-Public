@@ -1,10 +1,11 @@
 #!/bin/bash
 
-DATETIME=$(date +"%e.%m.%Y %R")
+DATETIME=$(date +"%e.%m.%y %R")
 TERRADATA=$(python terra_api.py)
 
-#Get image from webcam
-raspistill -rot 90 -o cam.jpg -w 1944 -h 2592 -q 100 -x
+#Get image from webcam or copy RAW image from TerrariumPI
+#raspistill -rot 90 -o cam.jpg -w 1944 -h 2592 -q 100 -x
+cp /home/pi/TerrariumPI/webcam/799bd9d9c5fbfb43fbe82ec550b4b943/799bd9d9c5fbfb43fbe82ec550b4b943_raw.jpg cam.jpg
 
 #Add overlay
 composite -gravity center overlay.png cam.jpg cam_overlay.jpg
