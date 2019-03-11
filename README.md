@@ -29,6 +29,5 @@ crontab -e
 
 So to make it work for you, you need/can change:
 1. IP and sensors id/quantity in terra_api.py
-2. Camera orientation and image size
-3. If changing above you need to change position of data and overlay.png
+2. Size of overlay.png if you use different camera resolution.
 3. FTP address and username and password.
