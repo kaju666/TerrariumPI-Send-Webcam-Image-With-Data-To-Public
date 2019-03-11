@@ -1,8 +1,7 @@
 # TerrariumPI-Send-Webcam-Image-With-Data-To-Public
 
 This script works with TerrariumPi and Raspberry Camera and make a image with terrarium data and then publish it to ftp.
-You can use different camera but then you need change raspistill command to fswebcam.
-You can also use different publish method than ftp.
+You can use different publish method than ftp, just add it at the end.
 
 Working script:
 http://kaju.ovh/cam1/terrarium.jpg
