@@ -1,12 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import requests
 import time
 
 # Change to your Terrarium PI IP
-s = requests.get('http://192.168.1.136:8090/api/sensors')
-u = requests.get('http://192.168.1.136:8090/api/uptime')
+s = requests.get('http://192.168.8.131:8090/api/sensors')
+u = requests.get('http://192.168.8.131:8090/api/uptime')
 sensors = s.json()
 upt = u.json()
 
@@ -35,4 +35,3 @@ print("{}: {}°C".format(t1n, t1))
 print("{}: {}°C".format(t2n, t2))
 print("{}: {}%".format(h0n, h0))
 print("Uptime: %dD %dH %dM" % (day, hour, minutes))
-	
