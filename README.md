@@ -22,7 +22,8 @@ sudo apt-get install imagemagick
 4. Run script with cron(mine works every 50 min.)
 ```
 crontab -e
-*/50 * * * * /home/pi/terra_cam.sh >> /home/pi/terra_cam.log
+*/10 * * * * sh /home/pi/terra_cam.sh
+
 ```
 
 ## Configuration:
@@ -30,4 +31,4 @@ crontab -e
 So to make it work for you, you need/can change:
 1. IP and sensors id/quantity in terra_api.py
 2. Size of overlay.png if you use different camera resolution.
-3. FTP address and username and password.
+3. FTP address and username and password or link to upload.php on your www
