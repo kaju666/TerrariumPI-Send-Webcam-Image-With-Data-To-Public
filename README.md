@@ -4,7 +4,7 @@ This script works with TerrariumPi and Raspberry Camera and make a image with te
 You can use different publish method than ftp, just add it at the end.
 
 Working script:
-http://kaju.ovh/cam1/terrarium.jpg
+https://kaju.ovh/terra/terrarium.jpg
 
 ## Instalation:
 
@@ -31,4 +31,5 @@ crontab -e
 So to make it work for you, you need/can change:
 1. IP and sensors id/quantity in terra_api.py
 2. Size of overlay.png if you use different camera resolution.
-3. FTP address and username and password or link to upload.php on your www
+3. Link to upload.php on your www
+4. Folder and camera source image name
