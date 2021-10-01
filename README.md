@@ -3,6 +3,8 @@
 This script works with TerrariumPi and Raspberry Camera and make a image with terrarium data and then publish it to ftp.
 You can use different publish method than ftp, just add it at the end.
 
+01.10.2021 - Updated to working with API v4 version.
+
 Working script:
 https://kaju.ovh/terra/terrarium.jpg
 
