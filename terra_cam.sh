@@ -13,14 +13,15 @@ composite -gravity center overlay.png cam.jpg cam_overlay.jpg
 
 #Add data to image
 convert cam_overlay.jpg \
-	-pointsize 40 -fill white -annotate +1485+45  \
+	-pointsize 35 -fill white -annotate +1485+45  \
 	"Corn Snake - 'Thea'" \
-	-pointsize 40 -fill white -annotate +1485+110  \
-	"Timestamp:$DATETIME" \
-	-pointsize 40 -fill white -annotate +1485+150  \
+	-pointsize 35 -fill white -annotate +1485+110  \
+	"Timestamp: $DATETIME" \
+	-pointsize 35 -fill white -annotate +1485+153  \
 	"$TERRADATA" \
 	terrarium.jpg
-#Upload to ftp
+	
+#Upload to WWW
 sleep 2
-curl -F "uploaded_file=@terrarium.jpg" https://domain.com/upload.php
+curl -F "uploaded_file=@terrarium.jpg" https://yourhosting.com/upload.php
 
