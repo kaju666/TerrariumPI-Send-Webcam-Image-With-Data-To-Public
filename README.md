@@ -1,7 +1,7 @@
 # TerrariumPI-Send-Webcam-Image-With-Data-To-Public
 
-This script works with TerrariumPi and Raspberry Camera and make a image with terrarium data and then publish it to ftp.
-You can use different publish method than ftp, just add it at the end.
+This script works with TerrariumPi and Raspberry Camera and make a image with terrarium data and then publish it to www hosting.
+You can use different publish method than php upload, just add it at the end.
 
 01.10.2021 - Updated to working with API v4 version.
 
@@ -21,7 +21,7 @@ sudo chmod +x terra_cam.sh
 ```
 sudo apt-get install imagemagick
 ```
-4. Run script with cron(mine works every 50 min.)
+4. Run script with cron(mine works every 10 min.)
 ```
 crontab -e
 */10 * * * * sh /home/pi/terra_cam.sh
@@ -30,8 +30,7 @@ crontab -e
 
 ## Configuration:
 
-So to make it work for you, you need/can change:
-1. IP and sensors id/quantity in terra_api.py
+So to make it work for you, you need:
+1. Change IP and sensors id/quantity in terra_api.py
 2. Size of overlay.png if you use different camera resolution.
-3. Link to upload.php on your www
-4. Folder and camera source image name
+3. Uplaod upload.php to your www hosting and change address in terra_cam.sh
